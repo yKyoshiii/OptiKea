@@ -1,14 +1,13 @@
 package io.github.ykyoshi.optikea;
 
+import io.github.ykyoshi.optikea.performance.PerformanceOverlay;
 import net.fabricmc.api.ClientModInitializer;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
 
-public class OptiKeaClient implements ClientModInitializer {
-    public static final Logger LOGGER = LoggerFactory.getLogger("optikea");
+public class OptikeaClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
-        LOGGER.info("OptiKea Initialized!");
+        HudRenderCallback.EVENT.register(new PerformanceOverlay());
     }
 }

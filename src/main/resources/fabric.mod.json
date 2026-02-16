@@ -11,7 +11,7 @@
   "environment": "*",
   "entrypoints": {
     "client": [
-      "io.github.ykyoshi.optikea.OptiKeaClient"
+      "io.github.ykyoshi.optikea.OptikeaClient"
     ]
   },
   "mixins": [
