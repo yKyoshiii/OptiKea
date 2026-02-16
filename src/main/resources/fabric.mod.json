@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "optikea",
+  "version": "1.0.0",
+  "name": "OptiKea",
+  "description": "A mod that optimizes the Minecraft HUD for better performance. It reduces the frequency of HUD updates, which can help improve frame rates on lower-end systems.",
+  "authors": ["yKyoshi"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/optikea/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "io.github.ykyoshi.optikea.OptiKeaClient"
+    ]
+  },
+  "mixins": [
+    "optikea.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.4",
+    "minecraft": "~1.21.11",
+    "java": ">=21"
+  }
+}
